@@ -1,0 +1,69 @@
+<?php
+
+namespace StructType;
+
+use \WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for GetSavedMessageCollectionResponse StructType
+ * @subpackage Structs
+ */
+class GetSavedMessageCollectionResponse extends AbstractStructBase
+{
+    /**
+     * The GetSavedMessageCollectionResult
+     * Meta informations extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var \ArrayType\ArrayOfWSSavedMessage
+     */
+    public $GetSavedMessageCollectionResult;
+    /**
+     * Constructor method for GetSavedMessageCollectionResponse
+     * @uses GetSavedMessageCollectionResponse::setGetSavedMessageCollectionResult()
+     * @param \ArrayType\ArrayOfWSSavedMessage $getSavedMessageCollectionResult
+     */
+    public function __construct(\ArrayType\ArrayOfWSSavedMessage $getSavedMessageCollectionResult = null)
+    {
+        $this
+            ->setGetSavedMessageCollectionResult($getSavedMessageCollectionResult);
+    }
+    /**
+     * Get GetSavedMessageCollectionResult value
+     * @return \ArrayType\ArrayOfWSSavedMessage|null
+     */
+    public function getGetSavedMessageCollectionResult()
+    {
+        return $this->GetSavedMessageCollectionResult;
+    }
+    /**
+     * Set GetSavedMessageCollectionResult value
+     * @param \ArrayType\ArrayOfWSSavedMessage $getSavedMessageCollectionResult
+     * @return \StructType\GetSavedMessageCollectionResponse
+     */
+    public function setGetSavedMessageCollectionResult(\ArrayType\ArrayOfWSSavedMessage $getSavedMessageCollectionResult = null)
+    {
+        $this->GetSavedMessageCollectionResult = $getSavedMessageCollectionResult;
+        return $this;
+    }
+    /**
+     * Method called when an object has been exported with var_export() functions
+     * It allows to return an object instantiated with the values
+     * @see AbstractStructBase::__set_state()
+     * @uses AbstractStructBase::__set_state()
+     * @param array $array the exported values
+     * @return \StructType\GetSavedMessageCollectionResponse
+     */
+    public static function __set_state(array $array)
+    {
+        return parent::__set_state($array);
+    }
+    /**
+     * Method returning the class name
+     * @return string __CLASS__
+     */
+    public function __toString()
+    {
+        return __CLASS__;
+    }
+}

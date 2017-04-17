@@ -1,0 +1,14 @@
+{
+    "name": "objectivco/php-listrak",
+    "description": "Package generated from https://webservices.listrak.com/v31/IntegrationService.asmx?WSDL using wsdltophp/packagegenerator",
+    "require": {
+        "php": ">=5.3.3",
+        "ext-soap": "*",
+        "wsdltophp/packagebase": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "./src/"
+        }
+    }
+}
